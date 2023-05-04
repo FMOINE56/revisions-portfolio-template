@@ -1,0 +1,62 @@
+header {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 20rem;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+}
+h3 {
+    margin: 0;
+}
+
+section.blue {
+    color: white;
+    background-color: #69D1E7;
+    text-align: center;
+}
+
+section.blue h3 {
+    color: black;
+}
+
+section.white {
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+section.grey {
+    color: black;
+    background-color: #EFF0F0;
+
+}
+
+section.black {
+    color: #EFF0F0;
+    background-color:#2C2F37;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+div.form {
+    display: flex;
+    flex-wrap: wrap;
+}
