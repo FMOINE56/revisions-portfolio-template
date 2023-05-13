@@ -3,49 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta http-eqsection="X-UA-Compatible" content="IE=edge">
-    <meta namesectioniewport" content="width=sectionice-width, initial-scale=1.0">
+    <meta name="viewport" content="width=sectionice-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Samuel Daurt</title>
 </head>
 <body>
-    <section class="container">
+    <div class="container">
         <header class="header">
-            <section>
-            </section>
+            <nav class="nav">
+                <ul> 
+                    <li class="nav__item">HOME</li>
+                    <li class="nav__item">HELLO</li>
+                    <li class="nav__item">WHO AM I</li>
+                    <li class="nav__item">WHAT I DO</li>                
+                    <li class="nav__item">SAY HI</li>
+                </ul>               
+            </nav>
             <h1>SAMUEL DAURT</h1>
-            <h2>HUMAN BOOSTER GUEST LOREM IPSUM</h2>
+            <h4>HUMAN BOOSTER GUEST LOREM IPSUM</h4>
         </header>
-        
+
         <main>
-            <section class="blue"><h3>INTRO</section>
-            <section class="white"><h3>BIO<h3></section>
-            <section class="grey"><h3>WORK</h3></section>
-            <section class="black">
-                <h3>CONTACT</h3>
-                <div class="form">
-                    <form action="" method="get" class="form-example">
-                        <div class="form-example">
-                            <label for="name">Enter your name: </label>
-                            <input type="text" name="name" id="name" required>
-                          </div>
-                          <div class="form-example">
-                            <label for="email">Enter your email: </label>
-                            <input type="email" name="email" id="email" required>
-                          </div>
-                          <div class="form-example">
-                            <input type="submit" value="Subscribe!">
-                          </div>                         
-                    </form>
-                </div>
-                <div class="aside">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis nesciunt, fugiat iste praesentium cumque error, atque beatae adipisci, esse id possimus facilis? Ducimus, ex id laborum cupiditate consequuntur saepe temporibus ab deleniti quia, sequi quos quasi molestias totam mollitia? Harum!
+            <section class="blue"><h3 class="blue__h3">INTRO</h3>
+                <div class="blue__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam unde reprehenderit ex error incidunt, voluptas odio sunt rem?</div>
+                <div class="blue__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                <div class="blue__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam vitae doloremque, temporibus nam labore mollitia ut veniam culpa rerum asperiores iusto! Ipsam tempora voluptatibus alias minima qui! Tempora sed, et eos provident ex reiciendis laudantium temporibus vitae? Corporis ipsam nesciunt dolores, quod quo porro perferendis placeat nostrum, facilis, omnis vel!</div>
+                <div class="blue__button">
+                    <button class="blue__button--black">SEE MY WORK</button>
+                    <button class="blue__button--transparent">CONTACT ME</button>
                 </div>
             </section>
-        </main>
-        
-        <footer class="footer">
-        </footer>
-    </section>
+            <section class="white">
+                <h3 class="white__h3">BIO</h3>
+                <div> <img  class="white__img" src="images/looking.jpg"> 
+                </div>
+                <div class="white__content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, nobis doloribus saepe earum fugit voluptas modi voluptatum rem tempora minus blanditiis. Esse id, repellat molestiae placeat, molestias nesciunt doloremque accusamus quisquam sint impedit vel porro. Quisquam aut sapiente expedita iure cum molestiae recusandae maxime consequuntur, eius, eos accusamus rem perspiciatis pariatur. Perspiciatis possimus natus debitis vel assumenda beatae aliquam excepturi, id unde veritatis facere quod repudiandae illo dolorem repellendus iusto labore corporis atque culpa eos odio! Iusto pariatur doloribus magni ad, maxime sapiente voluptas, officiis exercitationem, recusandae assumenda explicabo voluptatem eveniet esse consequuntur nulla dolorem rerum odio consectetur nemo suscipit. </div>
+                <div class="white__table"> 
+                    <table class="white-table--table">
+                        <tr class="white__table--blue">
+                            <th scope="col" colspan="2">DEVELOPPEMENT</th>
+                            <th scope="col" colspan="2">TECHNIQUE</th>
+                        </tr>
+                       <tr class="white__table--black">
+                            <th scope="col">LANGUAGE</th>
+                            <th scope="col">NOTE</th>
+                            <th scope="col">ENVIRONNEMENT</th>
+                            <th scope="col">NOTE</th>
+                        </tr>
+                       <tr class="white__table--content">
+                            <td>HTML</td>
+                            <td>****</td>
+                            <td>Linux</td>
+                            <td>****</td>
+                        </tr>
+                       <tr class="white__table--content">
+                            <td>CSS</td>
+                            <td>***</td>
+                            <td>MacOS</td>
+                            <td>*****</td>
+                        </tr>
+                       <tr class="white__table--content">
+                            <td>PHP</td>
+                            <td>*****</td>
+                            <td>Windows</td>
+                            <td>***</td>
+                        </tr>
+                    </table> </div>
+            </section>
+            <section class="grey">
+                <h3 class="grey__h3">WORK</h3>
+                <div class="article">
+                    <article class="class article__content">
+                        <img src="images/article-1.jpg" alt="" class="article__content--border">
+                        <h1>Article 1</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quas iusto culpa! Atque commodi minus animi consequatur qui sit voluptatum inventore impedit in expedita.</p>
+                        <button class="article__content--button">READ ME MORE</button>
+                    </article>
+                    <article class="class article__content">
+                        <img src="images/article-2.jpg" alt="" class="article__content--border">
+                        <h1>Article 2</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quas iusto culpa! Atque commodi minus animi consequatur qui sit voluptatum inventore impedit in expedita.</p>
+                        <button class="article__content--button">READ ME MORE</button>
+                    </article>
+                    <article class="class article__content">
+                        <img src="images/article-3.jpg" alt="" class="article__content--border">
+                        <h1>Article 3</h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae quas iusto culpa! Atque commodi minus animi consequatur qui sit voluptatum inventore impedit in expedita.</p>
+                        <button class="article__content--button">READ ME MORE</button>
+                    </article>
+                </div>
+            </section>
+            <section class="black">
+                <h3 class="black__h3">CONTACT</h3>
+                <div class="form">
+                    <div class="form__container">
+                        <form action="" method="get" class="form">
+                            <div class="form__container--radio">
+                                <label for="human">Human</label>
+                                <input type="radio" name="type" id="human" class="radio">
+                                <label for="unsure">Not sure</label>                             
+                                <input type="radio" name="type" id="unsure" class="radio" checked>
+                                <label for="robot">Robot</label>
+                                <input type="radio" name="type" id="robot" class="radio">
+                            </div>
+                            <div class="form__container--item">
+                                <label for="name">Subject </label>
+                                <input type="text" name="name" id="name" required placeholder="Work" class="input">
+                            </div>
+                            <div class="form__container--item">
+                                <label for="nickname">Nickname</label>
+                                <input type="strongail" name="nickname" id="nickname" required placeholder="Your Nickname" class="input">
+                            </div>
+                            <div class="form__container--item">
+                                <label for="email">Email address</label>
+                                <input type="strongail" name="email" id="email" required placeholder="Your email" class="input">
+                            </div>
+                            <div class="form__container--item">
+                                <label for="message">Message</label>
+                             <textarea name="" id="message" cols="30" rows="10" class="text">Your message</textarea>
+                            </div>
+                            <div class="button">
+                                <button class="reset"><strong>reset</strong></button>
+                                <button class="send"><strong>send this message !</strong></button>
+                            </div>                         
+                        </form>
+                    </div>
+                    <div class="aside">
+                        Lorstrong ipsum dolor sit amet consectetur adipisicing elit. Quis nesciunt, fugiat iste praesentium cumque error, atque beatae adipisci, esse id possimus facilis? Ducimus, ex id laborum cupiditate consequuntur saepe tstrongporibus ab deleniti quia, sequi quos quasi molestias totam mollitia? Harum!
+                    </div>
+                </div>
+            </section>
+        </main>   
+        <footer class="footer">Samuel Daurt copyright... Lorem ipsum dolor sit amet</footer>
+    </div>
     
 </body>
 </html>

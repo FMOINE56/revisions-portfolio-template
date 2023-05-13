@@ -1,30 +1,72 @@
+body {
+    background-color: 2em ;
+    margin: 0;
+    font-family: system-ui;
+}
+
+div.container {
+    width: 53%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 20rem;
-}
-
-body {
-    background-color: black;
+    height: 21em;
     margin: 0;
 }
 
-.container {
-    width: 50%;
-    margin: 0 auto;
+.nav {
+    align-self: flex-start;
     display: flex;
-    flex-direction: column;
-    
+    align-items: center;
+    flex-direction: row;  
+    width: 36%;
+    height: 2.5em;
+    margin: 0;
+    background-color: black;    
+    color: #d0d0db;;  
+    border: solid 1px grey;
+    border-top: 0;
+    padding: 0.6em 0;
+    border-radius: 0 0 30px ;
+    justify-content: flex-start;
+    font-size:small; 
 }
 
-h1, h2 {
+.nav__item {
+    display: inline-block;
+    color: #d0d0db;
+    padding: 0 0.4em;
+}
+
+h1 {
     color: white;
     text-align: center;
+    margin: 1.6em 0 0 0;
+    font-size: 1.8em;
 }
+
+h4 {
+    text-shadow: 0 0 5px rgba(0,0,0,0.5);
+    color: #d0d0db;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 0.9em;
+}
+
 h3 {
+    padding: 0;
+    position: relative;
+    top: -20px;
+    left: 40%;
+    right: 40%;
     margin: 0;
 }
+
 
 section.blue {
     color: white;
@@ -32,9 +74,6 @@ section.blue {
     text-align: center;
 }
 
-section.blue h3 {
-    color: black;
-}
 
 section.white {
     color: black;
@@ -45,18 +84,279 @@ section.white {
 section.grey {
     color: black;
     background-color: #EFF0F0;
+    text-align: center;
 
 }
 
 section.black {
     color: #EFF0F0;
     background-color:#2C2F37;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 0;
 }
 
-div.form {
+.blue__h3 {
+    color: black;
+    width: 14%;
+    background-color: #69D1E7;
+    padding : 1em;
+}
+
+.white__h3 {
+    color: black;
+    width: 14%;
+    background-color: white;
+    padding : 1em;
+}
+
+.grey__h3 {
+    color: black;
+    width: 14%;
+    background-color: #EFF0F0;
+    padding : 1em;
+}
+
+.black__h3 {
+    color: #EFF0F0;
+    width: 14%;
+    background-color:#2C2F37;
+    padding : 1em;
+}
+
+.blue__button {
+    text-align: center;
+    margin: 1.4em;
+}
+
+.blue__button--black {
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    padding: 1em;
+    margin: 0.5em;
+}
+
+.blue__button--transparent {
+    background-color: #69D1E7;
+    color:black;
+    border-radius: 10px;
+    border: solid black;
+    padding: 1em;
+    margin: 1em;
+}
+
+.blue__text {
+    margin: 1em 7em;
+}
+
+.blue__content {
+    border: solid 1px white;
+    border-radius: 10px;
+    padding: 2em;
+    margin : 1em 4em;
+    font-size:xx-large;
+}
+
+main {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.form__container{
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 65%;
+    padding: 0 0em 2em 4em;
+    margin: 0;
+}
+
+.form__container--item {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__container--radio {
+    width: 100%;
+    padding: 2em 0;
+    margin: 0 0 1em;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.form__container--radio label {
+    padding: 0 1em 0 0;
+}
+
+.form__container--radio input {
+    margin: 0 1em 0 0;
+}
+
+input.radio:checked {
+    accent-color: #696b71;
+}
+
+div.aside {
+    width: 35%;
+    margin: 0;
+    padding: 2em 4em 0 2em;
+    text-align: left;
+    font-size: 1em;
+}
+
+.button {
+    display: inline-block;
+    text-align: left;
+}
+
+button.reset {
+    width: 5em;
+    height: 3.5em;
+    background-color: #69D1E7;
+    margin: 5px;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+button.send {
+    width: 15em;
+    height: 3.5em;
+    background-color: #69D1E7;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+form {
+    border-right: 0.5px solid #EFF0F0; 
+    display: flex;
+    flex-direction: column;  
+    padding: 0; 
+}
+
+input::placeholder {
+    color: #69D1E7 ;
+}
+
+input {
+    background-color: #56595F;
+    padding: 1em;
+    margin: 0 2em 1em 0;
+    color: #69D1E7;
+}
+
+textarea {
+    background-color: #56595F;
+    padding: 1em;
+    margin: 0 2em 1em 0;
+    color: #69D1E7;
+}
+
+label {
+    text-align: left;
+}
+
+.white__img {
+    margin: 1em;
+    width:90%;
+}
+
+.white__content {
+    margin: 0 4em;
+    padding: 1em 1em;    
+}
+
+
+.white__table {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 4em 0;
+}
+
+.white-table--table {
+    border-collapse:collapse;
+    width: 90%;
+}
+
+.white-table--table tr {
+    height: 2.5em;
+}
+
+.white-table--table td {
+    width: 25%;
+}
+
+.white__table--blue {
+    background-color: #69D1E7;
+    border: solid 1px grey;
+    margin: 0;
+}
+
+.white__table--black  {
+    background-color: black;
+    border: solid 1px grey;
+    color: white;
+    text-align: left;
+}
+
+.white__table--black  th {
+    padding-left: 1em;
+}
+
+.white__table--content td {
+    background-color: white;
+    color: black;
+    border: solid grey 1px;}
+
+.article {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-direction: row;
+    color: black;
+    margin: 0 1em;
+    padding: 0 0 2em 0;
+}
+
+.article h1 {
+    color: black;
+}
+
+.article__content {
+    width: 23%;
+    margin: 2.5em;
+}
+
+.article__content--border {
+    width: 95%;
+    border : 0.8em solid white;
+    height: 140px;
+}
+
+.article__content--button {
+    background-color: #69D1E7;
+    color: white;
+    width: 100%;
+    height: 3em;
+    border: none;
+}
+
+.footer  {
+    background-color: black;
+    color: white;
+    padding: 3em;
 }
