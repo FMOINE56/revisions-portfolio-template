@@ -68,7 +68,7 @@ section.black {
 
 .form__container--radio {
     width: 100%;
-    padding: 2em 0;
+    padding: 1em 0 0;
     margin: 0 0 1em;
     display: inline-flex;
     flex-direction: row;
@@ -115,20 +115,26 @@ input::placeholder {
 
 input {
     background-color: #56595F;
-    padding: 1em;
-    margin: 0 2em 1em 0;
+    margin: 0 1vw 0 0;
+    padding: 1em 0 1em 1em;
     color: #69D1E7;
+    border: none;
+    max-width: 90%
 }
 
 textarea {
     background-color: #56595F;
-    padding: 1em;
-    margin: 0 2em 1em 0;
+    padding: 1em 0em 1em 1em;
+    margin: 0 1em 1em 0;
     color: #69D1E7;
+    max-width: 90%;
+    border: none;
+
 }
 
 label {
     text-align: left;
+    padding: 1em 0;
 }
 
 .white__img {
@@ -146,7 +152,7 @@ label {
     justify-content: center;
     text-align: center;
     border-collapse: collapse;
-    margin: 0;
+    margin:0 1em 0 1em;
     padding: 4em 0;
 }
 
@@ -230,7 +236,6 @@ label {
         border: solid 1px grey;
         border-top: 0;
         padding: 0;
-        border-radius: 0 0 30px ;
         justify-content: center;
         font-size:large; 
     }
@@ -308,7 +313,7 @@ label {
         display: flex;
         width: 100%;
         padding: 0 0 0 6px;
-        margin: 0;
+        margin: 0 2vw 0 2vw;
         justify-content: center;
         flex-direction:column
     }
@@ -318,16 +323,16 @@ label {
         flex-wrap: wrap;
         justify-content: flex-start;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
         padding: 0 1px;
         margin: 0;
     }
     
     div.aside {
-        width: 100%;
-        margin: 0;
-        padding: 2px 2px 0 2px;
-        text-align: left;
+        width: 94%;
+        margin: 0 2vw 0 2vw;
+        padding: 2vh 0;
+        text-align: center;
         font-size: 1em;
     }    
     
@@ -356,8 +361,8 @@ label {
         justify-content: center;
         flex-direction: column;
         color: black;
-        margin: 0 1em;
-        padding: 0 0 2em 0;
+        margin: 0 0 0 2em;
+        padding: 0 2em 2em 2em;
     }
 
     .article__content {
@@ -397,7 +402,7 @@ label {
         border-top: 0;
         padding: 0.6em 0;
         justify-content: center;
-        font-size:small; 
+        font-size:large; 
     }
 
     .nav__item {
@@ -453,6 +458,13 @@ label {
         border-collapse:collapse;
         width: 95%;
         padding: 0;
+    }
+
+    div.aside {
+        margin: 0 1vw 1vh 1vw;
+        text-align: center;
+        font-size: 1em;
+        width: 90%;
     }
 }
 
@@ -566,9 +578,11 @@ label {
     .form {
         display: flex;
         width: 100%;
-        padding: 0;
+        padding: 0 1vw 4vh;
         margin: 0;
-        justify-content: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .form__container{
@@ -576,15 +590,15 @@ label {
         flex-wrap: wrap;
         justify-content: flex-start;
         flex-direction: column;
-        width: 65%;
-        padding: 0 0em 2em 4em;
+        width: 50%;
+        /*padding: 0 0em 2em 4em;*/
         margin: 0;
     }
 
     div.aside {
-        width: 35%;
-        margin: 0;
-        padding: 2em 4em 0 2em;
+        width: 29%;
+        margin: 0 0 0 1vw;
+        padding: 2vh 4vw 0 4vw;
         text-align: left;
         font-size: 1em;
     }
