@@ -170,7 +170,7 @@ label {
 }
 
 .white__table--black  th {
-    padding-left: 1em;
+    margin-left: 0em;
 }
 
 .white__table--content td {
@@ -205,7 +205,7 @@ label {
 
 /* MOBILE */
 
-@media (min-width: 576px ) {
+@media (min-width: 375px ) {
     
     div.container {
         width: 100%;
@@ -344,7 +344,7 @@ label {
     
     .white-table--table {
         border-collapse:collapse;
-        width: 90%;
+        width: 100%;
     }
     
     .white-table--table tr {
@@ -354,7 +354,7 @@ label {
     .white-table--table td {
         width: 25%;
     }
-    
+
     .article {
         display: flex;
         flex-wrap: nowrap;
@@ -459,6 +459,11 @@ label {
         width: 95%;
         padding: 0;
     }
+
+    .white__table--black  th {
+        padding-left: 1em;
+    }
+    
 
     div.aside {
         margin: 0 1vw 1vh 1vw;
